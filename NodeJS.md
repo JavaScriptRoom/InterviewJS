@@ -4,10 +4,10 @@
         // make me serve different files on /foo vs /bar
     });
 
-What is "callback hell" and describe a solution methodology.
+What is "callback hell"? Describe a solution methodology.
 
 How do you handle an unhandled exception in NodeJS? Use the process object to create an exception handler for these.
 
-    process.on('uncaughtException', function(err) {
+    process.on('uncaughtException', (err) => {
         console.log('Caught exception: ' + err);
     });
