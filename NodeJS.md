@@ -12,6 +12,7 @@ Medium
 3. How do you handle an unhandled exception in NodeJS? Use the process object to create an exception handler for these.
 
 Answer:
+
     process.on('uncaughtException', (err) => {
         console.log('Caught exception: ' + err);
     });
